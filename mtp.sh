@@ -35,7 +35,7 @@ case $iplist in
     iplist="OFF"
     ;;
 esac
-echo "选择了$iplist模式~"
+# echo "选择了$iplist模式~"
 
 read -rp "你需要TAG标签吗(Y/N): " chrony_install
     [[ -z ${chrony_install} ]] && chrony_install="Y"
