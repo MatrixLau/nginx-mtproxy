@@ -22,6 +22,14 @@ bash <(curl -sSL "https://cdn.jsdelivr.net/gh/MatrixLau/nginx-mtproxy@main/mtp.s
 bash <(curl -sSL "https://raw.githubusercontent.com/MatrixLau/nginx-mtproxy/main/mtp2.sh")
 ```
 
+### 白名单清理脚本（实验）
+
+**由上面脚本中抽离出清理的内容，配置*crontab*实现定时清理白名单**
+
+```
+curl -sSL "https://raw.githubusercontent.com/MatrixLau/nginx-mtproxy/main/mtp_auto_clean.sh" > mtp_auto_clean.sh
+```
+
 ### Stop service / 停止服务
 
 ```
