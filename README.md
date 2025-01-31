@@ -29,6 +29,11 @@ bash <(curl -sSL "https://raw.githubusercontent.com/MatrixLau/nginx-mtproxy/main
 ```
 curl -sSL "https://raw.githubusercontent.com/MatrixLau/nginx-mtproxy/main/mtp_auto_clean.sh" > mtp_auto_clean.sh
 ```
+配合**CronTab** 实现定时清空IP
+```
+0 6 * * 2,4,6 bash /root/mtp_auto_clean.sh
+```
+
 
 ### Stop service / 停止服务
 
